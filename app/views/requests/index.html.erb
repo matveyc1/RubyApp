@@ -1,0 +1,7 @@
+<h2>Ваши заявки:</h2>
+
+<h4><p><%= link_to "Создать заявку", "/"%></p><h4>
+
+<% @request.each do |request| %>
+  <p><%= link_to "Заявка №#{request.id}", request_path(id:request.id) %></p>
+<% end %>

@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  second_name: MyText
+  surname: MyText
+  number: MyText
+  email: MyText
+  weight: 1
+  length: 1
+  width: 1
+  height: 1
+  start_point: MyText
+  finish_point: MyText
+
+two:
+  name: MyText
+  second_name: MyText
+  surname: MyText
+  number: MyText
+  email: MyText
+  weight: 1
+  length: 1
+  width: 1
+  height: 1
+  start_point: MyText
+  finish_point: MyText

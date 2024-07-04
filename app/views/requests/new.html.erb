@@ -1,0 +1,40 @@
+<h2>Новая заявка</h2>
+    <%= form_with model: @request do |form | %>
+   
+    <p><%= form.label :name, 'Имя' %></p>
+    <p><%= form.text_field :name, required: true %></p>
+    
+    <p><%= form.label :second_name, 'Фамилия' %></p>
+    <p><%= form.text_field :second_name, required: true %></p>
+
+    <p><%= form.label :surname, 'Отчество' %></p>
+    <p><%= form.text_field :surname, required: true %></p>
+
+    <p><%= form.label :number, 'Номер телефона' %></p>
+    <p><%= form.text_field :number, required: true %></p>
+
+    <p><%= form.label :email, 'Email' %></p>
+    <p><%= form.email_field :email, required: true %></p>
+
+    <p><%= form.label :weight, 'Вес(кг)' %></p>
+    <p><%= form.number_field :weight, required: true %></p>
+
+    <p><%= form.label :length, 'Длина(см)' %></p>
+    <p><%= form.number_field :length, required: true %></p>
+
+    <p><%= form.label :width, 'Ширина(см)' %></p>
+    <p><%= form.number_field :width, required: true %></p>
+
+    <p><%= form.label :height, 'Высота(см)' %></p>
+    <p><%= form.number_field :height, required: true %></p>
+
+    <p><%= form.label :start_point, 'Пункт оправления' %></p>
+    <p><%= form.text_field :start_point, required: true %></p>
+
+    <p><%= form.label :finish_point, 'Пукт назначения' %></p>
+    <p><%= form.text_field :finish_point, required: true %></p>
+    
+    <p><%= form.submit 'Расчитать'%></p>
+    <% end %>
+    
+    <p><%= link_to "Спискок ваших заявок", "/requests"%></p>

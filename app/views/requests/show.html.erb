@@ -1,0 +1,45 @@
+<h2>Заявка</h2>
+
+    <p><%= link_to "Вернуться к списку заявок", "/requests" %></p>
+     <p><%= button_to "Удалить заявку", request_path(@request), method: :delete %></p>
+
+    <p><label for="request[name]">Имя</label></p>
+    <p><%=@request.name%></p>
+    
+    <p><label for="request[second_name]">Фамилия</label></p>
+    <p><%=@request.second_name%></p>
+    
+    <p><label for="request[surname]">Отчество</label></p>
+    <p><%=@request.surname%></p>
+   
+    <p><label for="request[number]">Телефон</label></p>
+    <p><%=@request.number%></p>
+    
+    <p><label for="request[email]">Email</label></p>
+    <p><%=@request.email%></p>
+    
+    <p><label for="request[weight]">вес(кг)</label></p>
+    <p><%=@request.weight%></p>
+    
+    <p><label for="request[length]">длина(см)</label></p>
+    <p><%=@request.length%><%=' см'%></p>
+    
+    <p><label for="request[width]">ширина(см)</label></p>
+    <p><%=@request.width%><%=' см'%></p>
+    
+    <p><label for="request[height]">высота(см)</label></p>
+    <p><%=@request.height%><%=' см'%></p>
+    
+    <p><label for="request[start_point]">пункт отправления</label></p>
+    <p><%=@request.start_point%></p>
+   
+    <p><label for="request[finish_poin]">пункт назначения</label></p>
+    <p><%=@request.finish_point%></p>
+
+    <p><label for="request[distance]">Дистанция</label></p>
+    <p><%=@request.distance%></p>
+    
+    <p><label for="request[price]">Цена</label></p>
+    <p><%=@request.price%><%=' рублей'%></p>
+
+  
